@@ -1,0 +1,47 @@
+.single-feature {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.single-feature:hover {
+    background: #f8faff; /* Color suave para indicar selección */
+    border-color: #365CF5;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.modal-header {
+    border-bottom: 2px solid #f1f1f1;
+    background-color: #f8faff;
+}
+
+.modal-title {
+    color: #01030b;
+    font-weight: 700;
+}
+/* Estilos para que el catálogo sea legible */
+.modal-content {
+    background-color: #ffffff !important; /* Fondo blanco sólido */
+    border: none !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.modal-header {
+    background-color: #f8faff; /* Un tono azul muy leve para la cabecera */
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.modal-body {
+    padding: 30px;
+    color: #333; /* Asegura que el texto interno sea oscuro */
+}
+
+/* Oscurecer un poco más el fondo detrás del modal (el backdrop) */
+.modal-backdrop.show {
+    opacity: 0.7 !important; 
+}
