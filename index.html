@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/whats.css"/> 
     <link rel="stylesheet" href="assets/css/galeria.css"/>
     <link rel="stylesheet" href="assets/css/catalogo.css"/>
+    <link rel="stylesheet" href="assets/css/maps.css"/>
 
 
     <!-- Google tag (gtag.js) -->
@@ -1039,7 +1040,7 @@
         </div>
       </div>
 
-      <!-- G A L E R I A -->
+    
 
     </section>
 
@@ -1058,17 +1059,17 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="contact-form-wrapper">
-              <form action="" method="">
+              <form action="enviar.php" method="POST">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="single-input">
-                      <input type="text" id="name" name="name" class="form-input" placeholder="Nombre">
+                      <input type="text" id="name" name="name" class="form-input" placeholder="Nombre" required>
                       <i class="lni lni-user"></i>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="single-input">
-                      <input type="email" id="email" name="email" class="form-input" placeholder="Correo">
+                      <input type="email" id="email" name="email" class="form-input" placeholder="Correo" required>
                       <i class="lni lni-envelope"></i>
                     </div>
                   </div>
@@ -1080,13 +1081,13 @@
                   </div>
                   <div class="col-md-6">
                     <div class="single-input">
-                      <input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto">
+                      <input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto" required>
                       <i class="lni lni-text-format"></i>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="single-input">
-                      <textarea name="message" id="message" class="form-input" placeholder="Mensaje" rows="6"></textarea>
+                      <textarea name="message" id="message" class="form-input" placeholder="Mensaje" rows="6" required></textarea>
                       <i class="lni lni-comments-alt"></i>
                     </div>
                   </div>
@@ -1125,14 +1126,16 @@
                   </div>
                 </div>
                 <div class="col-lg-12 col-md-6">
-                  <div class="single-item">
-                    <div class="icon">
-                      <i class="lni lni-map-marker"></i>
+                  <a href="https://maps.app.goo.gl/4XF4xoYtSMTBiy6Z7?g_st=aw" target="_blank" class="address-link" target="_blank" rel="noopener noreferrer" class="address-link">
+                    <div class="single-item">
+                      <div class="icon">
+                        <i class="lni lni-map-marker"></i>
+                      </div>
+                      <div class="text">
+                        <p>Calle Capulín número 1 con prolongación 2 Norte Colonia Signoret, Chachapa, Amozoc, Puebla CP 72990.</p>
+                      </div>
                     </div>
-                    <div class="text">
-                      <p>Calle Cedro #512, Chachapa Amozoc de Mota, Puebla.</p>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               

@@ -1,0 +1,20 @@
+/* Estilo para el enlace de la dirección */
+.address-link {
+    text-decoration: none !important; /* Quita el subrayado */
+    color: inherit !important;       /* Mantiene los colores de tu plantilla */
+    display: block;                  /* Hace que todo el recuadro sea cliqueable */
+}
+
+/* Efecto visual al pasar el mouse */
+.address-link:hover .single-item {
+    background-color: #f0f4ff;       /* Un tono azul muy suave */
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.address-link:hover .icon i {
+    color: #365CF5;                  /* El icono cambia al azul de tu marca */
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
