@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars(trim($_POST['message']));
 
     // 2. Configuración del destinatario (TU CORREO)
-    $destinatario = "tireza.soluciones@gmail.com";
+    $destinatario = "ventas@tireza.com.mx";
     $asunto_email = "Nuevo contacto Web Tireza: " . $asunto_cliente;
 
     // 3. Estructura del cuerpo del mensaje
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cuerpo .= "--- Fin del mensaje ---";
 
     // 4. Cabeceras del correo (Permiten que puedas responder directamente al cliente)
-    $headers = "From: Tireza Web <noreply@tireza.com>\r\n"; // Cambia esto al dominio de tu hosting si es posible
+    $headers = "From: Tireza Web <ventas@tireza.com.mx>\r\n"; // Cambia esto al dominio de tu hosting si es posible
     $headers .= "Reply-To: " . $correo . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
